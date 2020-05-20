@@ -15,10 +15,10 @@ export default function SearchAppBar() {
         <Toolbar className="bar">
           <div className='sections'>
             <ul className='' >
-                <a href="" id='sec'>Section1</a>               
-                <a href="" id='sec'>Section2</a>
-                <a href="" id='sec'>Section3</a>
-                <a href="" id='sec'>Section4</a>
+                <a href="/#" id='sec'>Section1</a>               
+                <a href="/#" id='sec'>Section2</a>
+                <a href="/#" id='sec'>Section3</a>
+                <a href="/#" id='sec'>Section4</a>
             </ul>
           </div>      
         </Toolbar>

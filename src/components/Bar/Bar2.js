@@ -17,10 +17,10 @@ export default function SearchAppBar2() {
       <AppBar position="static" className="bar2" >
         <Toolbar>
           <ul className="socialmedia" style={{textDecoration: 'none'}}>
-            <a href="" ><FacebookIcon style={{textDecoration: 'none'}}/></a>
-            <a href="" ><InstagramIcon/></a>
-            <a href="" ><TwitterIcon/></a>
-            <a href="" ><RssFeedIcon/></a>
+            <a href="/#" ><FacebookIcon style={{textDecoration: 'none'}}/></a>
+            <a href="/#" ><InstagramIcon/></a>
+            <a href="/#" ><TwitterIcon/></a>
+            <a href="/#" ><RssFeedIcon/></a>
           </ul>
         <div id="rory">
           <div >© CodeRory</div>

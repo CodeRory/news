@@ -110,7 +110,7 @@ class CommentBox extends React.Component {
           <p className="comment-header" >{this.props.author}</p>
           <p className="comment-body">- {this.props.body}</p>
           <div className="comment-footer">
-            <a href="" className="comment-footer-delete" onClick={this.deleteComment}><DeleteIcon size="small"/></a>
+            <a href="/#" className="comment-footer-delete" onClick={this.deleteComment}><DeleteIcon size="small"/></a>
           </div>
         </div>
       );

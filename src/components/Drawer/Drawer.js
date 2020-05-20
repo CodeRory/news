@@ -137,7 +137,7 @@ export default function PersistentDrawerLeft() {
               <MenuIcon />
             </IconButton>
             <Typography id="titulo" variant="h6" noWrap >
-              <a href="" style={{textDecoration: 'none', color: 'white'}}>Lorem Ipsum</a>
+              <a href="/#" style={{textDecoration: 'none', color: 'white'}}>Lorem Ipsum</a>
             </Typography>
             <IconAvatars />
           </Toolbar>

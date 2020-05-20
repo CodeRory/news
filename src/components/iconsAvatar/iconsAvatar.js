@@ -48,13 +48,13 @@ export default function IconAvatars() {
     <div className={classes.root} id='avatarsRight'>
       <ul id='avatars'>
         <Avatar  className={classes.green}>
-          <a href="#" style={{textDecoration: 'none', color: 'white', cursor: 'wait'}}><MarkunreadIcon /></a>
+          <a href="/#" style={{textDecoration: 'none', color: 'white', cursor: 'wait'}}><MarkunreadIcon /></a>
         </Avatar>
         <Avatar className={classes.pink} id='remMov'>
-          <a href="#" ><PrintThisComponent /></a>
+          <a href="/#" ><PrintThisComponent /></a>
         </Avatar>
         <Avatar >
-          <a href="#" style={{textDecoration: 'none', color: 'white'}}><PersonPinIcon /></a>      
+          <a href="/#" style={{textDecoration: 'none', color: 'white'}}><PersonPinIcon /></a>      
         </Avatar>
       </ul>
     </div>
