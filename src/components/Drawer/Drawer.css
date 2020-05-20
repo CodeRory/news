@@ -1,0 +1,14 @@
+#titulo {
+  font-family: MontserratSubrayada;  
+  font-size: 2.7vmax;  /*  Modify the font size based on the screen size.  */   
+  
+}
+
+
+@media screen and (max-width: 800px){
+  #titulo {
+    text-overflow: clip;
+    overflow: visible;
+   }
+}
+

@@ -1,0 +1,11 @@
+.uploader {    
+    margin-bottom: 2%;
+    padding: 2%;   
+    text-align: center;
+}
+
+
+
+#inputcss2{
+    color: transparent; /* Quita el ningún archivo seleccionado */
+}

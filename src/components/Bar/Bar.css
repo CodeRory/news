@@ -1,0 +1,55 @@
+.bar {
+    background-color: grey;    
+}
+
+
+/* -----Bottom----------------------------------------------- */
+.socialmedia {
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.socialmedia a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1%;
+}
+
+#rory {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+/* -----------------Sections---------------------- */
+
+.sections ul {
+    display: flex;
+    flex-direction: row;    
+    list-style-type: none;
+    margin-top: 10%;    
+
+}
+
+.sections ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;   
+    padding-right: 4%;      
+    font-size: small;
+    
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 800px){
+    .sections ul a{
+      display: flex; 
+      flex-direction: column;
+      margin-left: 4px;
+    }
+  }

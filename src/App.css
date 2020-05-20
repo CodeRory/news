@@ -1,0 +1,87 @@
+
+
+/* Recordar que antes de realizar el responsive se añadió lo siguiente al html.index  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"> */
+
+.App {
+  width: 80%; /* Deja márgenes (hay que poner margin auto también) a los lados sin tocar el drawer */
+  margin: 0 auto; /* Hace posible los márgenes y que la web se centre */  
+  max-width: 1100px;/*  El ancho máximo que tendrá nuestra web, por muy grande que se vea la pantalla, de ésta manera no se deformarán nuestro elementos al alargarse demasiado */
+}
+
+
+#firstContainer {
+  display: flex;
+}
+
+
+#left {
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box; /* Hace que el tamaño del contenedor se mida en función del tamaño real de la caja, no sumándole padding, así que cuando se sume el 60%  y el 40% dará 100% sin problemas del añadido del padding. */  
+}
+
+#right {
+  width: 40%;
+  padding: 20px;
+  height: 80%;
+  box-sizing: border-box;  
+}
+
+@media screen and (max-width: 800px){
+  #firstContainer {
+    flex-direction: column;
+  }
+  .App {
+    width: 100%;
+  }
+  #right {
+    width: 100%;
+  }
+  #left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .App {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------Interact section-------------------------------------------------------------------------- */
+
+#interact {
+  display: flex;
+  flex-direction: row;
+  margin: 2 auto; 
+}
+
+#int1 {
+  width: 60%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;  
+}
+
+#int2 {
+  display:flex;
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box  
+}
+
+@media screen and (max-width: 800px){
+  #interact {
+    flex-direction: column;
+  }
+
+  #int1 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #int2 {
+    width: 100%;
+    margin-left: 0;
+  }
+}

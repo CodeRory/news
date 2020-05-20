@@ -1,0 +1,1 @@
+An example of a news/forum web.

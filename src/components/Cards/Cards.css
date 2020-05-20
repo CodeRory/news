@@ -1,0 +1,61 @@
+
+/* -------------Cards2-------------------------------------------------------- */
+
+.card2Container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;  
+    margin: 20px;  
+}
+
+
+
+.cardC {    
+    
+    color: white;   
+    margin: 3 auto;
+    width: 100%;  
+    margin-right: 10px;
+    margin-left: 10px;
+      
+}
+
+#cardI {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px){
+    .card2Container {
+        flex-direction: column;
+    }
+    
+    .cardC {
+        margin-bottom: 12px;
+    }
+  }
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.three {
+    display: flex;
+    margin: 1 auto;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.card3C {   
+    margin-left: 2%;
+    margin-bottom: 2%;
+
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    .three {
+        flex-direction: column;
+    }
+  }

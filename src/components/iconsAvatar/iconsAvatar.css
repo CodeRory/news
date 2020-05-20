@@ -1,0 +1,31 @@
+#avatars {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+   
+}
+
+#avatars Avatar a {
+    text-emphasis: none;
+}
+
+#avatarsRight{
+    text-decoration: none;
+    margin-left: 35%;
+    display: flex;
+    text-decoration: none;
+
+
+}
+
+
+@media screen and (max-width: 800px){
+    #avatarsRight{
+        text-decoration: none;
+        margin-left: -5%;
+        display: flex;
+        text-decoration: none;
+    
+    
+    }
+  }
