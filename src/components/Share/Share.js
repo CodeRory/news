@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import {
-  FacebookShareCount,
+  /* FacebookShareCount,
   PinterestShareCount,  
   RedditShareCount,
-  TumblrShareCount,
+  TumblrShareCount, */
   FacebookShareButton,
-  FacebookMessengerShareButton,
-  FacebookMessengerIcon,
+  /* FacebookMessengerShareButton,
+  FacebookMessengerIcon, */
   LinkedinShareButton,
   TwitterShareButton,
-  PinterestShareButton,
+  /* PinterestShareButton,
   VKShareButton,
-  OKShareButton,
+  OKShareButton, */
   TelegramShareButton,
   WhatsappShareButton,
-  RedditShareButton,
+  /* RedditShareButton, */
   EmailShareButton,
-  TumblrShareButton,
+  /* TumblrShareButton,
   LivejournalShareButton,
   MailruShareButton,
   ViberShareButton,
@@ -24,30 +24,30 @@ import {
   LineShareButton,
   WeiboShareButton,
   PocketShareButton,
-  InstapaperShareButton,
+  InstapaperShareButton, */
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
-  PinterestIcon,
+  /* PinterestIcon,
   VKIcon,
-  OKIcon,
+  OKIcon, */
   TelegramIcon,
   WhatsappIcon,
-  RedditIcon,
+  /* RedditIcon,
   TumblrIcon,
-  MailruIcon,
+  MailruIcon, */
   EmailIcon,
-  LivejournalIcon,
+  /* LivejournalIcon,
   ViberIcon,
   WorkplaceIcon,
   LineIcon,
   PocketIcon,
   InstapaperIcon,
-  WeiboIcon,
+  WeiboIcon, */
 } from 'react-share';
 
 import '../Share/Share.css'
-import exampleImage from './react-share-pin-example.png';
+
 
 class Share extends Component {
   render() {

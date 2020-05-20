@@ -5,6 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './fonts/MontserratSubrayada-Regular.ttf';
 
+
+  
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
