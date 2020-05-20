@@ -6,7 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import ShareIcon from '@material-ui/icons/Share';
 import land1 from '../Cards/land1.png';
 import land2 from '../Cards/land2.png';
 

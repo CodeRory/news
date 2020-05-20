@@ -70,7 +70,7 @@ function Uploader() {
         {loading ? 
           (<h3>Loading...</h3>) 
           : 
-          (<img src={image} style={{ width: '40%'}}/>)
+          (<img src={image} alt="" style={{ width: '40%'}}/>)
         }
       </div>
     </div>
