@@ -1,7 +1,4 @@
 
-
-/* Recordar que antes de realizar el responsive se añadió lo siguiente al html.index  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"> */
-
 .App {
   width: 80%; /* Deja márgenes (hay que poner margin auto también) a los lados sin tocar el drawer */
   margin: 0 auto; /* Hace posible los márgenes y que la web se centre */  
@@ -32,7 +29,7 @@
     flex-direction: column;
   }
   .App {
-    width: 100%;
+    width: 80%;
   }
   #right {
     width: 100%;

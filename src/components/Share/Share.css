@@ -1,19 +1,35 @@
   
-.mediaContainer {
-  
+.mediaContainer {  
   display: flex;
-  
-
 }
   
+
+.buttonPlusHide {  
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+
+.allHideSocial {
+  display: flex;
+  flex-direction: column;
+  order: -3;
+  box-shadow: black;
+
+
+}
+
+
   
 #showMoreSocial {
   padding-top: 4px;
   width:20px;
-  height:24px;
-  
+  height:24px;  
 }
-  
+
+
   
   .Demo__some-network {
     vertical-align: top;

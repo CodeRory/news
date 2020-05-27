@@ -64,10 +64,10 @@ class Foo extends React.Component {
   render() {
       const { showing } = this.state;
       return (
-          <div>
+          <div className='buttonPlusHide'>
               <button style={{border: 'none', marginLeft: '-6px', outline: 'none'}} onClick={() => this.setState({ showing: !showing })}><img src={more} alt='more' id='showMoreSocial'></img></button>
               { showing 
-                  ? <div>         
+                  ? <div className='allHideSocial'>         
                       <div className="Demo__some-network">
                         <WhatsappShareButton
                           url={this.shareUrl}
@@ -78,13 +78,7 @@ class Foo extends React.Component {
                           <WhatsappIcon size={32} round />
                         </WhatsappShareButton>                
                         <div className="Demo__some-network__share-count">&nbsp;</div>
-                      </div>
-
-                      <div className="Demo__some-network">
-                         <LinkedinShareButton url={this.shareUrl} className="Demo__some-network__share-button">
-                          <LinkedinIcon size={32} round />
-                        </LinkedinShareButton>
-                      </div> 
+                      </div>                     
 
                       <div className="Demo__some-network">
                         <TelegramShareButton

@@ -59,3 +59,22 @@
         flex-direction: column;
     }
   }
+
+
+
+
+
+#readMoreCss{
+    font-weight: bolder;
+    margin-left: 8%;
+    
+
+
+}
+
+
+#readMoreCss:hover{
+    font-weight: bolder;
+    background-color:#c0e2fd;
+
+}

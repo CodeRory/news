@@ -37,7 +37,7 @@ export default function RecipeReviewCard3() {
       <CardMedia
         className={classes.media}
         image={squi}
-        title="Paella dish"
+        title="/#"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
@@ -54,7 +54,7 @@ export default function RecipeReviewCard3() {
       <CardMedia
         className={classes.media}
         image={fox}
-        title="Paella dish"
+        title="/#"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
@@ -69,7 +69,7 @@ export default function RecipeReviewCard3() {
       <CardMedia
         className={classes.media}
         image={gir}
-        title="Paella dish"
+        title="/#"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">

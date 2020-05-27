@@ -44,7 +44,7 @@ export default function ImgMediaCard1() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" id='readMoreCss'>
           Read More
         </Button>
         <Button size="small" color="primary" style={{display: 'flex',  alingContent: 'flex-end', marginLeft: '38%'}}>
