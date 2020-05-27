@@ -65,49 +65,50 @@ class Foo extends React.Component {
       const { showing } = this.state;
       return (
           <div>
-              <button style={{border: 'none', marginLeft: '-6px'}} onClick={() => this.setState({ showing: !showing })}><img src={more} alt='more' id='showMoreSocial'></img></button>
+              <button style={{border: 'none', marginLeft: '-6px', outline: 'none'}} onClick={() => this.setState({ showing: !showing })}><img src={more} alt='more' id='showMoreSocial'></img></button>
               { showing 
-                  ? <div><div className="Demo__some-network">
-                  <TelegramShareButton
-                    url={this.shareUrl}
-                    title={this.title}
-                    className="Demo__some-network__share-button"
-                  >
-                    <TelegramIcon size={32} round />
-                  </TelegramShareButton>
-        
-                  <div className="Demo__some-network__share-count">&nbsp;</div>
-                </div>
-        
-                <div className="Demo__some-network">
-                  <WhatsappShareButton
-                    url={this.shareUrl}
-                    title={this.title}
-                    separator=":: "
-                    className="Demo__some-network__share-button"
-                  >
-                    <WhatsappIcon size={32} round />
-                  </WhatsappShareButton>
-        
-                  <div className="Demo__some-network__share-count">&nbsp;</div>
-                </div>
-        
-                <div className="Demo__some-network">
-                  <LinkedinShareButton url={this.shareUrl} className="Demo__some-network__share-button">
-                    <LinkedinIcon size={32} round />
-                  </LinkedinShareButton>
-                </div>    
-        
-                <div className="Demo__some-network">
-                  <EmailShareButton
-                    url={this.shareUrl}
-                    subject={this.title}
-                    body="body"
-                    className="Demo__some-network__share-button"
-                  >
-                    <EmailIcon size={32} round />
-                  </EmailShareButton>
-                </div></div>
+                  ? <div>         
+                      <div className="Demo__some-network">
+                        <WhatsappShareButton
+                          url={this.shareUrl}
+                          title={this.title}
+                          separator=":: "
+                          className="Demo__some-network__share-button"
+                        >
+                          <WhatsappIcon size={32} round />
+                        </WhatsappShareButton>                
+                        <div className="Demo__some-network__share-count">&nbsp;</div>
+                      </div>
+
+                      <div className="Demo__some-network">
+                         <LinkedinShareButton url={this.shareUrl} className="Demo__some-network__share-button">
+                          <LinkedinIcon size={32} round />
+                        </LinkedinShareButton>
+                      </div> 
+
+                      <div className="Demo__some-network">
+                        <TelegramShareButton
+                          url={this.shareUrl}
+                          title={this.title}
+                          className="Demo__some-network__share-button"
+                        >
+                        <TelegramIcon size={32} round />
+                        </TelegramShareButton>              
+                        <div className="Demo__some-network__share-count">&nbsp;</div>
+                      </div>
+
+                      <div className="Demo__some-network">
+                      <EmailShareButton
+                        url={this.shareUrl}
+                        subject={this.title}
+                        body="body"
+                        className="Demo__some-network__share-button"
+                      >
+                        <EmailIcon size={32} round />
+                      </EmailShareButton>
+                    </div>
+                  </div>
+
                   : null
               }
           </div>  
