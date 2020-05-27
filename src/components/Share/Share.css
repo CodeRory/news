@@ -1,4 +1,20 @@
   
+.mediaContainer {
+  
+  display: flex;
+  
+
+}
+  
+  
+#showMoreSocial {
+  padding-top: 4px;
+  width:20px;
+  height:24px;
+  
+}
+  
+  
   .Demo__some-network {
     vertical-align: top;
     display: inline-block;

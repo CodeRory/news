@@ -23,8 +23,8 @@ import {
   WorkplaceShareButton,
   LineShareButton,
   WeiboShareButton,
-  PocketShareButton,
-  InstapaperShareButton, */
+  PocketShareButton,*/
+  InstapaperShareButton, 
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
@@ -37,16 +37,83 @@ import {
   TumblrIcon,
   MailruIcon, */
   EmailIcon,
-  /* LivejournalIcon,
+  LivejournalIcon,
   ViberIcon,
   WorkplaceIcon,
   LineIcon,
   PocketIcon,
   InstapaperIcon,
-  WeiboIcon, */
+  WeiboIcon, 
 } from 'react-share';
 
-import '../Share/Share.css'
+
+
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+
+
+
+import '../Share/Share.css';
+
+import more from '../Share/more.png';
+
+
+class Foo extends React.Component {
+
+  state = { showing: false };
+
+  render() {
+      const { showing } = this.state;
+      return (
+          <div>
+              <button style={{border: 'none', marginLeft: '-6px'}} onClick={() => this.setState({ showing: !showing })}><img src={more} alt='more' id='showMoreSocial'></img></button>
+              { showing 
+                  ? <div><div className="Demo__some-network">
+                  <TelegramShareButton
+                    url={this.shareUrl}
+                    title={this.title}
+                    className="Demo__some-network__share-button"
+                  >
+                    <TelegramIcon size={32} round />
+                  </TelegramShareButton>
+        
+                  <div className="Demo__some-network__share-count">&nbsp;</div>
+                </div>
+        
+                <div className="Demo__some-network">
+                  <WhatsappShareButton
+                    url={this.shareUrl}
+                    title={this.title}
+                    separator=":: "
+                    className="Demo__some-network__share-button"
+                  >
+                    <WhatsappIcon size={32} round />
+                  </WhatsappShareButton>
+        
+                  <div className="Demo__some-network__share-count">&nbsp;</div>
+                </div>
+        
+                <div className="Demo__some-network">
+                  <LinkedinShareButton url={this.shareUrl} className="Demo__some-network__share-button">
+                    <LinkedinIcon size={32} round />
+                  </LinkedinShareButton>
+                </div>    
+        
+                <div className="Demo__some-network">
+                  <EmailShareButton
+                    url={this.shareUrl}
+                    subject={this.title}
+                    body="body"
+                    className="Demo__some-network__share-button"
+                  >
+                    <EmailIcon size={32} round />
+                  </EmailShareButton>
+                </div></div>
+                  : null
+              }
+          </div>  
+      )
+  }
+}
 
 
 class Share extends Component {
@@ -55,7 +122,7 @@ class Share extends Component {
     const title = 'GitHub';
 
     return (
-      <div className="Demo__container">
+      <div className="mediaContainer">
         <div className="Demo__some-network">
           <FacebookShareButton
             url={shareUrl}
@@ -77,52 +144,13 @@ class Share extends Component {
           </TwitterShareButton>
 
           <div className="Demo__some-network__share-count">&nbsp;</div>
-        </div>
-
-        <div className="Demo__some-network">
-          <TelegramShareButton
-            url={shareUrl}
-            title={title}
-            className="Demo__some-network__share-button"
-          >
-            <TelegramIcon size={32} round />
-          </TelegramShareButton>
-
-          <div className="Demo__some-network__share-count">&nbsp;</div>
-        </div>
-
-        <div className="Demo__some-network">
-          <WhatsappShareButton
-            url={shareUrl}
-            title={title}
-            separator=":: "
-            className="Demo__some-network__share-button"
-          >
-            <WhatsappIcon size={32} round />
-          </WhatsappShareButton>
-
-          <div className="Demo__some-network__share-count">&nbsp;</div>
-        </div>
-
-        <div className="Demo__some-network">
-          <LinkedinShareButton url={shareUrl} className="Demo__some-network__share-button">
-            <LinkedinIcon size={32} round />
-          </LinkedinShareButton>
-        </div>    
-
-        <div className="Demo__some-network">
-          <EmailShareButton
-            url={shareUrl}
-            subject={title}
-            body="body"
-            className="Demo__some-network__share-button"
-          >
-            <EmailIcon size={32} round />
-          </EmailShareButton>
-        </div>
+        </div>     
+        
+        <Foo className="Demo__some-network__share-button"/>
       </div>
     );
   }
 }
 
 export default Share;
+
