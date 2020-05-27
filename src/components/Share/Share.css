@@ -24,9 +24,13 @@
 
   
 #showMoreSocial {
-  padding-top: 4px;
-  width:20px;
-  height:24px;  
+  
+  width:23px;
+  height:23px;  
+}
+
+#showMoreSocial:hover {
+  opacity: 0.5;
 }
 
 

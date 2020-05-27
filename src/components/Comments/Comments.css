@@ -1,7 +1,8 @@
-.commentbox {    
+.commentContainer {    
     margin-bottom: 2%;
     padding: 2%;    
     text-align: center;
+    
     
 }
 
@@ -28,12 +29,12 @@
 #yourname {    
     box-shadow: none;
     text-shadow: none;
-    width: 50%;
+    width: 80%;
     font-family: Arial, Helvetica, sans-serif;    
 }
 
 #textarea {
-    width: 60%;
+    width: 80%;
     height: 80%;
     margin-top: 0.5%;
     font-family: Arial, Helvetica, sans-serif;    
