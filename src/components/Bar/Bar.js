@@ -10,7 +10,7 @@ import '../Bar/Bar.css';
 export default function SearchAppBar() {  
 
   return (
-    <div>
+    <div className='containerBar'>
       <AppBar position="flex" className="SectionBar" >
         <Toolbar className="bar">
           <div className='sections'>

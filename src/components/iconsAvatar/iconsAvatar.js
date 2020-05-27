@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   green: {
-    color: '#fff',
-    backgroundColor: green[500],
+    color: 'black',
+    backgroundColor: 'white',
     textDecoration: 'none',
   },  
    
@@ -48,13 +48,13 @@ export default function IconAvatars() {
     <div className={classes.root} id='avatarsRight'>
       <ul id='avatars'>
         <Avatar  className={classes.green}>
-          <a href="/#" style={{textDecoration: 'none', color: 'white', cursor: 'wait'}}><MarkunreadIcon /></a>
+          <a href="/#" style={{textDecoration: 'none', color: 'black', cursor: 'wait'}}><MarkunreadIcon /></a>
         </Avatar>
         <Avatar className={classes.pink} id='remMov'>
           <a href="/#" ><PrintThisComponent /></a>
         </Avatar>
-        <Avatar >
-          <a href="/#" style={{textDecoration: 'none', color: 'white'}}><PersonPinIcon /></a>      
+        <Avatar className={classes.green}>
+          <a href="/#" ><PersonPinIcon style={{textDecoration: 'none', color: 'black', cursor: 'wait'}}/></a>      
         </Avatar>
       </ul>
     </div>
