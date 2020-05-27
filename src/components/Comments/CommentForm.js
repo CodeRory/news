@@ -10,11 +10,12 @@ const styles = {
     background: '#3949ab',
     border: 0,
     borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'primary',
+    boxShadow: '0px 2px 26px -7px rgba(0,0,0,0.75)',
+    color: 'white',
     height: 48,  
     fontFamily: 'arial',
     textTransform: 'none',
+    
     
   },
 };
@@ -34,6 +35,7 @@ class CommentForm extends React.Component {
           <div className="">
             <Button
             className={classes.root}
+            id='postItButton'
             variant="contained" 
             type="submit"            
             /* style={{display:'none'}} */
