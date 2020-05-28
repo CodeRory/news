@@ -12,9 +12,12 @@ const styles = {
     borderRadius: 3,
     boxShadow: '0px 2px 26px -7px rgba(0,0,0,0.75)',
     color: 'white',
-    height: 48,  
+    height: 40,  
     fontFamily: 'arial',
     textTransform: 'none',
+    marginLeft: '35px',
+    width: '78px',
+
     
     
   },
@@ -32,7 +35,7 @@ class CommentForm extends React.Component {
             <input id="yourname" placeholder="📝Your name" required ref={(input) => this.author = input}></input><br />
             <textarea id='textarea' placeholder="🚩Your comment" rows="4" required ref={(textarea) => this.body = textarea}></textarea>
           </div>
-          <div className="">
+          <div id="buttonPostArea">
             <Button
             className={classes.root}
             id='postItButton'

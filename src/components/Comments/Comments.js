@@ -18,7 +18,8 @@ const styles = {
     color: 'primary',    
     fontStyle: 'white',
     fontFamily: 'arial',
-    height: '100px'
+    
+    
     
     
   },
@@ -50,10 +51,10 @@ class CommentBox extends React.Component {
       const { classes } = this.props;
       return(
         
-        <div className="commentContainer">
+        <div className="commentContainer" >
           <h2>Write your opinion about this web!</h2>
-          <CommentForm addComment={this.addComment.bind(this)}/>
-          <Button className={classes.root} id="buttonShow" onClick={this.handleClick.bind(this)}>
+          <CommentForm addComment={this.addComment.bind(this)} />
+          <Button className={classes.root} id="buttonShow" onClick={this.handleClick.bind(this)} >
             {buttonText}
           </Button>
           <h3>Comments</h3>
