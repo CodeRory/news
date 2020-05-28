@@ -43,11 +43,11 @@ export default function ImgMediaCard1() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" id='readMoreCss'>
+      <CardActions >
+        <Button size="small" color="primary" id='readMoreCssBig' >
           Read More
         </Button>
-        <Button size="small" color="primary" style={{display: 'flex',  alingContent: 'flex-end', marginLeft: '38%'}}>
+        <Button size="small" color="primary" style={{display: 'flex',  alingContent: 'flex-end'}}>
           <Share />
         </Button>
       </CardActions>
