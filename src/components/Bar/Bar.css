@@ -25,15 +25,22 @@
 /* -----------------Sections---------------------- */
 
 
+
+.container {
+    margin-top: 34.5px;
+}
+
+
+
 .allSections {
     list-style-type: none;
     text-align: left;    
     background-color: #666;
-    margin-top: 69px;
-    height: 48px;
+    
+    height: 45px;
     z-index: 3;
     
-     
+        
 }
 
 
@@ -41,7 +48,7 @@
     
     display: inline-flex;
     text-align: center;
-    margin: 10px 3% 0 0;
+    margin: 6px 3% 0 0;
     
 }
 
