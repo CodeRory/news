@@ -23,6 +23,8 @@ import Looks4Icon from '@material-ui/icons/Looks4';
 import ChatIcon from '@material-ui/icons/Chat';
 import IconAvatars from '../iconsAvatar/iconsAvatar';
 
+import TemporaryDrawer from '../Drawer/Temporary';
+
 import '../Drawer/Drawer.css';
 
 
@@ -38,8 +40,8 @@ const useStyles = makeStyles((theme) => ({
     
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-      /* zIndex: theme.zIndex.drawer + 1, */
+      duration: theme.transitions.duration.leavingScreen, 
+      zIndex: theme.zIndex.drawer + 1,
     }),
   },
 
@@ -67,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
   drawer: {    
     width: drawerWidth,
     /* flexShrink: 0, */
+    zIndex: '3',
   },
 
   drawerPaper: {
@@ -117,6 +120,7 @@ export default function PersistentDrawerLeft() {
 
   return (
     <div className="container">
+      <div className='allBarWithoutDrawer'>
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
@@ -126,23 +130,22 @@ export default function PersistentDrawerLeft() {
           })}
         >
           <Toolbar >
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
-              
-            >
-              <MenuIcon />
-            </IconButton>
+          <TemporaryDrawer /> 
+            
             <Typography id="titulo" variant="h6" noWrap >
               <a href="/#" style={{textDecoration: 'none', color: 'white'}}>Lorem Ipsum</a>
             </Typography>
             <IconAvatars />
+            
           </Toolbar>
         </AppBar>
+      </div> 
 
+
+
+         
+      
+      <div className='onlyDrawer'>
         <Drawer
           className={classes.drawer}
           variant="persistent"
@@ -182,7 +185,8 @@ export default function PersistentDrawerLeft() {
           })}
         >      
         </main>      
-      </div>     
+      </div> 
+      </div>    
     </div>      
   );
 }
