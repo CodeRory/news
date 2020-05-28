@@ -1,9 +1,14 @@
 #titulo {
   font-family: MontserratSubrayada;  
   font-size: 2.7vmax;  /*  Modify the font size based on the screen size.  */   
-  margin-left: 12%;
+  
 }
 
+#buttonDrawerContainer {
+  margin-left: 12.5%;
+
+
+}
 
 @media screen and (max-width: 800px){
   #titulo {
@@ -11,5 +16,16 @@
     overflow: visible;
     margin-left: 0;
    }
+
+   #buttonDrawerContainer {
+    margin-left: 0;
+
+
+   }
 }
+
+
+
+
+
 

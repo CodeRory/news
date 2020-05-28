@@ -8,7 +8,6 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import LooksOneIcon from '@material-ui/icons/LooksOne';
 import LooksTwoIcon from '@material-ui/icons/LooksTwo';
@@ -77,10 +76,10 @@ export default function SwipeableTemporaryDrawer() {
   );
 
   return (
-    <div>    
+    <div id='buttonDrawerContainer'>    
       {['left'].map((anchor) => (
         <React.Fragment key={anchor} style={{border: 'solid'}}>
-          <Button onClick={toggleDrawer(anchor, true)}><MenuIcon style={{color: 'white'}} /></Button>
+          <Button onClick={toggleDrawer(anchor, true)} ><MenuIcon style={{color: 'white'}} /></Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
