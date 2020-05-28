@@ -18,6 +18,7 @@ import Uploader from './components/Uploader/Uploader' ;
 
 import CommentBox from './components/Comments/Comments';
 
+import SimpleDialog from './components/Dialogs/Account';
 
 function App(){
   return(
@@ -59,7 +60,7 @@ function App(){
       <div>
         <SearchAppBar2/>
       </div>
-
+      
       
     </div>  
   )

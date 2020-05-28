@@ -1,11 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { green, } from '@material-ui/core/colors';
+
 import Avatar from '@material-ui/core/Avatar';
 import MarkunreadIcon from '@material-ui/icons/Markunread';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
+
 import PrintThisComponent from '../Print/Print';
 
+
+import SimpleDialog from '../Dialogs/Account';
 
 
 import '../iconsAvatar/iconsAvatar.css';
@@ -54,7 +56,7 @@ export default function IconAvatars() {
           <a href="/#" ><PrintThisComponent /></a>
         </Avatar>
         <Avatar className={classes.green}>
-          <a href="/#" ><PersonPinIcon style={{textDecoration: 'none', color: 'black', cursor: 'wait'}}/></a>      
+          <a href="/#" style={{textDecoration: 'none', color: 'black', cursor: 'pointer'}} ><SimpleDialog /></a>      
         </Avatar>
       </ul>
     </div>
