@@ -5,7 +5,7 @@ class PrintThisComponent extends Component {
   render() {
     return (
       <div>
-        <button onClick={() => window.print()}><LocalPrintshopIcon style={{height: 2100, color: 'primary', cursor: 'pointer'}} /></button>        
+        <button onClick={() => window.print()}><LocalPrintshopIcon style={{height: 2100, color: '#3f51b5', cursor: 'pointer'}} /></button>        
       </div>
     )
   }

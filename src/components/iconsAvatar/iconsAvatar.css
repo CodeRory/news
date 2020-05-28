@@ -14,9 +14,22 @@
     margin-left: 35%;
     display: flex;
     text-decoration: none;
-
-
 }
+
+
+#logIn{
+    text-decoration: 'none';
+    color: #3f51b5;
+    cursor: pointer;
+}
+
+#logIn:hover {
+    background: rgb(230, 225, 225);
+    
+    
+}
+
+
 
 
 @media screen and (max-width: 800px){

@@ -1,12 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-
 import Avatar from '@material-ui/core/Avatar';
 import MarkunreadIcon from '@material-ui/icons/Markunread';
-
 import PrintThisComponent from '../Print/Print';
-
-
 import SimpleDialog from '../Dialogs/Account';
 
 
@@ -25,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   pink: {
     backgroundColor: 'white',
-    color: 'secondary',       
+          
   },
 
   green: {
@@ -50,13 +46,13 @@ export default function IconAvatars() {
     <div className={classes.root} id='avatarsRight'>
       <ul id='avatars'>
         <Avatar  className={classes.green}>
-          <a href="/#" style={{textDecoration: 'none', color: 'black', cursor: 'wait'}}><MarkunreadIcon /></a>
+          <a href="/#" style={{textDecoration: 'none', color: '#3f51b5', cursor: 'wait'}}><MarkunreadIcon /></a>
         </Avatar>
         <Avatar className={classes.pink} id='remMov'>
-          <a href="/#" ><PrintThisComponent /></a>
+          <a href="/#" ><PrintThisComponent style={{color: '#3f51b5', backgroundColor: '#3f51b5'}}/></a>
         </Avatar>
-        <Avatar className={classes.green}>
-          <a href="/#" style={{textDecoration: 'none', color: 'black', cursor: 'pointer'}} ><SimpleDialog /></a>      
+        <Avatar className={classes.green} id='logIn'>
+          <a href="/#" id='logIn'><SimpleDialog /></a>      
         </Avatar>
       </ul>
     </div>
