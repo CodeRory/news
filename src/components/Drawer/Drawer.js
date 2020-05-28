@@ -51,13 +51,11 @@ export default function PersistentDrawerLeft() {
           })}
         >
           <Toolbar >
-          <TemporaryDrawer /> 
-            
+          <TemporaryDrawer />             
             <Typography id="titulo" variant="h6" noWrap >
               <a href="/#" style={{textDecoration: 'none', color: 'white'}}>Lorem Ipsum</a>
             </Typography>
-            <IconAvatars />
-            
+            <IconAvatars />            
           </Toolbar>
         </AppBar>
       </div>   
