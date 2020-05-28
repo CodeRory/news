@@ -32,7 +32,7 @@ function AlertDialog(props) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"This is just a template"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">{props.title}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
           In this area, you would be send to another section of this website.
@@ -58,10 +58,10 @@ export default function SearchAppBar() {
   return (
     <div className='container'>
       <ul className='allSections'>
-        <li><AlertDialog>Section 1</AlertDialog></li>
-        <li><AlertDialog>Section 2</AlertDialog></li>
-        <li><AlertDialog>Section 3</AlertDialog></li>
-        <li><AlertDialog>Section 4</AlertDialog></li>
+        <li><AlertDialog title='S1 This is just a template'>Section 1</AlertDialog></li>
+        <li><AlertDialog title='S2 This is just a template'>Section 2</AlertDialog></li>
+        <li><AlertDialog title='S3 This is just a template'>Section 3</AlertDialog></li>
+        <li><AlertDialog title='S4 This is just a template'>Section 4</AlertDialog></li>
       </ul>  
     </div>    
   );
