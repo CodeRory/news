@@ -29,8 +29,7 @@ const useStyles = makeStyles({
 });
 
 export default function SwipeableTemporaryDrawer() {
-  const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const classes = useStyles(); 
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -39,7 +38,6 @@ export default function SwipeableTemporaryDrawer() {
   });
 
   const iconList= [<LooksOneIcon/>, <LooksTwoIcon/>, <Looks3Icon/>, <Looks4Icon/>]
-
   const toggleDrawer = (anchor, open) => (event) => {
     if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
@@ -48,23 +46,8 @@ export default function SwipeableTemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
-
-
-
-
-
-
-  const list = (anchor) => (
-    
-    
-    
+  const list = (anchor) => (     
     <div
       className={clsx(classes.list, {
         [classes.fullList]: anchor === 'top' || anchor === 'bottom',
@@ -96,7 +79,7 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div>    
       {['left'].map((anchor) => (
-        <React.Fragment key={anchor}>
+        <React.Fragment key={anchor} style={{border: 'solid'}}>
           <Button onClick={toggleDrawer(anchor, true)}><MenuIcon style={{color: 'white'}} /></Button>
           <SwipeableDrawer
             anchor={anchor}

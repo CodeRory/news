@@ -1,14 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
+import { makeStyles } from '@material-ui/core/styles';
+
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import IconAvatars from '../iconsAvatar/iconsAvatar';
 import TemporaryDrawer from '../Drawer/Temporary';
 
@@ -16,15 +13,12 @@ import '../Drawer/Drawer.css';
 
 
 const drawerWidth = 245;
-
 const useStyles = makeStyles((theme) => ({
-  root: {
-    
+  root: {    
     display: 'flex',    
   },
 
-  appBar: {    
-    
+  appBar: {        
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen, 
@@ -32,8 +26,7 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
 
-  appBarShift: {
-    
+  appBarShift: {    
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
     transition: theme.transitions.create(['margin', 'width'], {
