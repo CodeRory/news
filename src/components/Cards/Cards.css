@@ -10,14 +10,12 @@
 
 
 
-.cardC {    
-    
+.cardC {        
     color: white;   
     margin: 3 auto;
     width: 100%;  
     margin-right: 10px;
-    margin-left: 10px;
-      
+    margin-left: 10px;     
 }
 
 #cardI {
@@ -36,7 +34,7 @@
   }
 
 
-/* ---------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------ */
 
 .three {
     display: flex;
@@ -64,21 +62,26 @@
 /* ------------BigCardSections----------------- */
 
 
-#readMoreCssBig {
+#readMoreCssBig {    
     
-    font-weight: bolder;
-    margin-left: 3%;
+    margin-left: 6%;
     display: flex;
     flex-direction: row;
     width: 120px;
-    margin-right: 52%;
-
+    margin-right: 50%;
 }
 
-#readMoreCssBig:hover{
-    font-weight: bolder;
+#readMoreCssBigText {
+    font-weight: bold;
+    color: #3f51b5;
+}
+
+
+
+#readMoreCssBigText:hover{
+    
     background-color:#c0e2fd;
-}
+} 
 
 @media screen and (max-width: 400px){
     #readMoreCssBig {
@@ -91,18 +94,26 @@
 
 
 
-#readMoreCss{
-    font-weight: bolder;
+#readMoreCss{    
     margin-left: 1%;
     display: flex;
     flex-direction: row;
     width: 40%;
 }
 
-#readMoreCss:hover{
-    font-weight: bolder;
-    background-color:#c0e2fd;
+
+
+#fourSectionsReadMore{
+    border: none;    
+    margin-left: 13%;    
+    width: 120px;
+    
+
 }
 
+#fourSectionsReadMore:hover {
+    border: none;    
+    color: #3f51b5;
+    background-color:#c0e2fd;
 
-
+}
