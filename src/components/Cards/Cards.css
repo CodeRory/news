@@ -4,22 +4,21 @@
 .card2Container {
     display: flex;
     flex-direction: row;
-    margin: 20px 0 20px 0;
-      
+    margin: 20px 0 20px 0;      
 }
-
-
 
 .cardC {        
     color: white;   
     margin: 3 auto;
-    width: 100%;  
+    width: 80%;  
     margin-right: 10px;
-    margin-left: 10px;     
+    margin-left: 10px;  
+    border: solid;   
 }
 
 #cardI {
     width: 100%;
+    
 }
 
 
