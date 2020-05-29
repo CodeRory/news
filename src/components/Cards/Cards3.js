@@ -85,8 +85,8 @@ export default function RecipeReviewCard() {
         <IconButton aria-label="add to favorites" >
           <AlertDialog title='You like this' icon=<ThumbUpIcon  />/>
         </IconButton>
-        <IconButton aria-label="add to favorites" style={{ marginLeft: '-3rem'}}>
-          <AlertDialog title='You dislike this' icon=<ThumbDownIcon  />/>
+        <IconButton aria-label="add to favorites" style={{ marginLeft: '-1.5em'}}>
+          <AlertDialog title='You dislike this' icon=<ThumbDownIcon />/>
         </IconButton>        
       </CardActions>      
     </Card>
@@ -106,7 +106,7 @@ export default function RecipeReviewCard() {
         <IconButton aria-label="add to favorites" >
           <AlertDialog title='You like this' icon=<ThumbUpIcon />/>
         </IconButton>
-        <IconButton aria-label="add to favorites"  style={{ marginLeft: '-3rem'}}>
+        <IconButton aria-label="add to favorites"  style={{ marginLeft: '-1.5em'}}>
           <AlertDialog title='You dislike this' icon=<ThumbDownIcon /> />
         </IconButton>       
       </CardActions>      
