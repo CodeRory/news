@@ -67,8 +67,5 @@
 
 
   @media screen and (max-width: 400px){
-    #showMoreSocial:hover {
-      display: none;
-    }
     
   }
