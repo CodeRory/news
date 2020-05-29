@@ -24,10 +24,13 @@
 @media screen and (max-width: 800px){
     .card2Container {
         flex-direction: column;
+        
     }
     
     .cardC {
         margin-bottom: 12px;
+        margin-left: 11%;
+        
     }
   }
 
