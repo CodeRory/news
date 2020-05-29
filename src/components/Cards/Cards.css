@@ -71,7 +71,7 @@
     flex-wrap: nowrap;
     width: 110px;
     margin-right: 40%;
-    border: solid;
+    
 }
 
 #readMoreCssBigText {
@@ -106,7 +106,7 @@
   }
 
 
-
+/* --------------4sections------------------------- */
 
 #readMoreCss{    
     margin-left: 1%;
