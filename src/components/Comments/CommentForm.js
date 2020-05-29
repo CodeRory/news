@@ -16,7 +16,7 @@ const styles = {
     fontFamily: 'arial',
     textTransform: 'none',
     marginLeft: '17px',
-    width: '78px',
+    width: '88px',
 
     
     
