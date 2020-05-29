@@ -68,9 +68,10 @@
     margin-left: 6%;
     display: flex;
     flex-direction: row;
-    width: 120px;
+    flex-wrap: nowrap;
+    width: 110px;
     margin-right: 40%;
-    
+    border: solid;
 }
 
 #readMoreCssBigText {
@@ -98,7 +99,7 @@
 
 @media screen and (max-width: 400px){
     #readMoreCssBig {
-        width: 220px;
+        width: 120px;
         margin-right: 12%;
         
     }
