@@ -24,6 +24,7 @@
   cursor: pointer;
   width:23px;
   height:23px;  
+  background-color: white;
 }
 
 #showMoreSocial:hover {
