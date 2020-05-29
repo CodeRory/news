@@ -34,7 +34,7 @@ function AlertDialog(props) {
         <DialogTitle id="alert-dialog-title">{props.title}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            This is just a templateIn this area, you would be send to another section of this website.
+            This is just a template. In this area, you would be send to another section of this website.
           </DialogContentText>
         </DialogContent>
         <DialogActions>          
