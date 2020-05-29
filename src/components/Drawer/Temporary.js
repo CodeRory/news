@@ -89,6 +89,9 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
+
+
+
 function CustomizedDialogs() {
   const [open, setOpen] = React.useState(false);
 
@@ -144,7 +147,7 @@ export default function SwipeableTemporaryDrawer() {
     right: false,
   });
 
-  const iconList= [<LooksOneIcon/>, <LooksTwoIcon/>, <Looks3Icon/>, <Looks4Icon/>]
+  const iconList= [<LooksOneIcon />, <LooksTwoIcon/>, <Looks3Icon/>, <Looks4Icon/>]
   const toggleDrawer = (anchor, open) => (event) => {
     if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
