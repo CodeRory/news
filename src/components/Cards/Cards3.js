@@ -14,8 +14,6 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-
-
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 
@@ -29,9 +27,6 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '37.5%', 
   },  
 }));
-
-
-
 
 function AlertDialog(props) {
   const [open, setOpen] = React.useState(false);
@@ -71,17 +66,11 @@ function AlertDialog(props) {
   );
 }
 
-
-
-
-
-
 export default function RecipeReviewCard() {
   const classes = useStyles();
   return (
     <div>
-    <Card className={classes.root}>
-      
+    <Card className={classes.root}>      
       <CardMedia
         className={classes.media}
         image={land1}
@@ -98,14 +87,9 @@ export default function RecipeReviewCard() {
         </IconButton>
         <IconButton aria-label="add to favorites" style={{ marginLeft: '-3rem'}}>
           <AlertDialog title='You dislike this' icon=<ThumbDownIcon  />/>
-        </IconButton>
-        
+        </IconButton>        
       </CardActions>      
     </Card>
-
-    
-
-
 
     <Card className={classes.root}>
       <CardMedia
@@ -127,7 +111,6 @@ export default function RecipeReviewCard() {
         </IconButton>       
       </CardActions>      
     </Card>
-
     </div>
   );
 }

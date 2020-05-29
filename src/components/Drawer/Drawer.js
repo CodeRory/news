@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -38,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PersistentDrawerLeft() {
   const classes = useStyles();  
-  const [open, setOpen] = React.useState(false); 
+  const [open] = React.useState(false); 
   return (
     <div className="container">
       <div className='allBarWithoutDrawer'>

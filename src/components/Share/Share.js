@@ -7,7 +7,7 @@ import {
   FacebookShareButton,
   /* FacebookMessengerShareButton,
   FacebookMessengerIcon, */
-  LinkedinShareButton,
+  /* LinkedinShareButton, */
   TwitterShareButton,
   /* PinterestShareButton,
   VKShareButton,
@@ -24,10 +24,10 @@ import {
   LineShareButton,
   WeiboShareButton,
   PocketShareButton,*/
-  InstapaperShareButton, 
+ /*  InstapaperShareButton,  */
   FacebookIcon,
   TwitterIcon,
-  LinkedinIcon,
+  /* LinkedinIcon, */
   /* PinterestIcon,
   VKIcon,
   OKIcon, */
@@ -37,18 +37,18 @@ import {
   TumblrIcon,
   MailruIcon, */
   EmailIcon,
-  LivejournalIcon,
+  /* LivejournalIcon,
   ViberIcon,
   WorkplaceIcon,
   LineIcon,
   PocketIcon,
   InstapaperIcon,
-  WeiboIcon, 
+  WeiboIcon,  */
 } from 'react-share';
 
 
 
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+/* import MoreHorizIcon from '@material-ui/icons/MoreHoriz'; */
 
 
 
