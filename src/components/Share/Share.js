@@ -61,7 +61,7 @@ class Foo extends React.Component {
       const { showing } = this.state;
       return (
           <div className='buttonPlusHide'>
-              <button style={{border: 'none', marginLeft: '-6px', outline: 'none'}} onClick={() => this.setState({ showing: !showing })}><img src={more} alt='more' id='showMoreSocial'></img></button>
+              <button style={{border: 'none', marginLeft: '-6px', outline: 'none', backgroundColor: 'white'}} onClick={() => this.setState({ showing: !showing })}><img src={more} alt='more' id='showMoreSocial'></img></button>
               { showing 
                   ? <div className='allHideSocial'>         
                       <div className="Demo__some-network">
