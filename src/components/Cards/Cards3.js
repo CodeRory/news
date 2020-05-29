@@ -93,11 +93,11 @@ export default function RecipeReviewCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" style={{marginLeft:'28%'}}>
-          <AlertDialog title='You like this' icon=<ThumbUpIcon />/>
+        <IconButton aria-label="add to favorites" >
+          <AlertDialog title='You like this' icon=<ThumbUpIcon  />/>
         </IconButton>
-        <IconButton aria-label="add to favorites">
-          <AlertDialog title='You dislike this' icon=<ThumbDownIcon />/>
+        <IconButton aria-label="add to favorites" style={{ marginLeft: '-3rem'}}>
+          <AlertDialog title='You dislike this' icon=<ThumbDownIcon  />/>
         </IconButton>
         
       </CardActions>      
@@ -113,16 +113,16 @@ export default function RecipeReviewCard() {
         image={land2}
         title=""
       />
-      <CardContent>
-        <Typography variant="h9" color="textSecondary" component="p">
+      <CardContent >
+        <Typography variant="h9" color="textSecondary" component="p" >
             Aenean accumsan ex eu lacus porta, quis feugiat nisi semper.
         </Typography>
       </CardContent>
-      <CardActions disableSpacing sytle={{display: 'flex', flexDirection: 'row', }}>
-        <IconButton aria-label="add to favorites" style={{marginLeft:'28%'}}>
+      <CardActions  sytle={{display: 'flex', flexDirection: 'row',   }}>
+        <IconButton aria-label="add to favorites" >
           <AlertDialog title='You like this' icon=<ThumbUpIcon />/>
         </IconButton>
-        <IconButton aria-label="add to favorites" >
+        <IconButton aria-label="add to favorites"  style={{ marginLeft: '-3rem'}}>
           <AlertDialog title='You dislike this' icon=<ThumbDownIcon /> />
         </IconButton>       
       </CardActions>      

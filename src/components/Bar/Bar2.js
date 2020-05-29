@@ -10,24 +10,19 @@ import RssFeedIcon from '@material-ui/icons/RssFeed';
 import '../Bar/Bar.css';
 
 export default function SearchAppBar2() {
- 
-
   return (
     <div className="bar2">
       <AppBar position="static" className="bar2" >
         <Toolbar>
           <ul className="socialmedia" style={{textDecoration: 'none'}}>
-            <a href="/#" ><FacebookIcon style={{textDecoration: 'none'}}/></a>
+            <a href="/#" ><FacebookIcon /></a>
             <a href="/#" ><InstagramIcon/></a>
             <a href="/#" ><TwitterIcon/></a>
             <a href="/#" ><RssFeedIcon/></a>
           </ul>
-        <div id="rory">
-          <div >© CodeRory</div>
-        </div>
-          
-            
-          
+          <div id="rory">
+            <div >© CodeRory</div>
+          </div>           
         </Toolbar>
       </AppBar>
     </div>

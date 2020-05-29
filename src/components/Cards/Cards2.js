@@ -6,22 +6,19 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
-import '../Cards/Cards.css';
-
 import bird from '../Cards/bird.png';
 import raccoon from '../Cards/raccoon.png';
 import lion from '../Cards/lion.png';
 import owl from '../Cards/owl.png';
-
 import Share from '../Share/Share';
-
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
+
+import '../Cards/Cards.css';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -100,11 +97,6 @@ export default function ImgMediaCard2() {
             </Button>
           </CardActions>
         </Card>
-
-
-
-
-
         
         <Card className="cardC">
           <CardActionArea>
