@@ -69,13 +69,25 @@
     display: flex;
     flex-direction: row;
     width: 120px;
-    margin-right: 50%;
+    margin-right: 40%;
+    
 }
 
 #readMoreCssBigText {
     font-weight: bold;
     color: #3f51b5;
 }
+
+#socialMediaBig {
+    display: 'flex';
+    
+    
+
+
+}
+
+
+
 
 
 

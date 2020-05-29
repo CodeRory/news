@@ -110,7 +110,7 @@ export default function ImgMediaCard1() {
         <div size="small" color="primary" id='readMoreCssBig' >
           <ScrollDialog />
         </div>
-        <Button size="small" color="primary" style={{display: 'flex',  alingContent: 'flex-end'}}>
+        <Button size="small" color="primary" id='socialMediaBig'>
           <Share />
         </Button>
       </CardActions>
