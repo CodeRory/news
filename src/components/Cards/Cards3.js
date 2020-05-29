@@ -8,6 +8,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import land1 from '../Cards/land1.png';
 import land2 from '../Cards/land2.png';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
@@ -21,10 +27,54 @@ const useStyles = makeStyles((theme) => ({
   media: {
     
     paddingTop: '37.5%', 
-  },
-  
-  
+  },  
 }));
+
+
+
+
+function AlertDialog(props) {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div>
+      <Button variant="outlined" color="primary" onClick={handleClickOpen} style={{border: 'none'}}>
+        {props.icon}
+      </Button>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{props.title}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            Thanks for your vote!
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>          
+          <Button onClick={handleClose} color="primary" autoFocus>
+            Back
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+  );
+}
+
+
+
+
+
 
 export default function RecipeReviewCard() {
   const classes = useStyles();
@@ -43,11 +93,11 @@ export default function RecipeReviewCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" style={{marginLeft:   '35%'}}>
-          <ThumbUpIcon />
+        <IconButton aria-label="add to favorites" style={{marginLeft:'28%'}}>
+          <AlertDialog title='You like this' icon=<ThumbUpIcon />/>
         </IconButton>
         <IconButton aria-label="add to favorites">
-          <ThumbDownIcon />
+          <AlertDialog title='You dislike this' icon=<ThumbDownIcon />/>
         </IconButton>
         
       </CardActions>      
@@ -69,11 +119,11 @@ export default function RecipeReviewCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing sytle={{display: 'flex', flexDirection: 'row', }}>
-        <IconButton aria-label="add to favorites" style={{marginLeft:   '35%'}}>
-          <ThumbUpIcon />
+        <IconButton aria-label="add to favorites" style={{marginLeft:'28%'}}>
+          <AlertDialog title='You like this' icon=<ThumbUpIcon />/>
         </IconButton>
-        <IconButton aria-label="add to favorites">
-          <ThumbDownIcon />
+        <IconButton aria-label="add to favorites" >
+          <AlertDialog title='You dislike this' icon=<ThumbDownIcon /> />
         </IconButton>       
       </CardActions>      
     </Card>

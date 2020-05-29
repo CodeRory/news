@@ -24,28 +24,21 @@
 
 /* -----------------Sections---------------------- */
 
-
-
 .container {
-    margin-top: 34.5px;
-}
+    margin-top: 34.5px;}
 
 
 
 .allSections {
     list-style-type: none;
     text-align: left;    
-    background-color: #666;
-    
+    background-color: #666;    
     height: 45px;
-    z-index: 3;
-    
-        
+    z-index: 3;       
 }
 
 
-.container li {   
-    
+.container li {       
     display: inline-flex;
     text-align: center;
     margin: 6px 3% 0 0;
@@ -79,3 +72,16 @@
     color: #ffffff;
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 800px){
+    
+    .container li {       
+    display: inline-flex;
+    text-align: center;
+    margin: 6px -10px 0 -10px;
+    
+    }
+}
+  
+  

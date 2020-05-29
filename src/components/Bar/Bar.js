@@ -6,7 +6,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
-
 import '../Bar/Bar.css';
 
 
@@ -35,7 +34,7 @@ function AlertDialog(props) {
         <DialogTitle id="alert-dialog-title">{props.title}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-          In this area, you would be send to another section of this website.
+            This is just a templateIn this area, you would be send to another section of this website.
           </DialogContentText>
         </DialogContent>
         <DialogActions>          
@@ -58,10 +57,10 @@ export default function SearchAppBar() {
   return (
     <div className='container'>
       <ul className='allSections'>
-        <li><AlertDialog title='S1 This is just a template'>Section 1</AlertDialog></li>
-        <li><AlertDialog title='S2 This is just a template'>Section 2</AlertDialog></li>
-        <li><AlertDialog title='S3 This is just a template'>Section 3</AlertDialog></li>
-        <li><AlertDialog title='S4 This is just a template'>Section 4</AlertDialog></li>
+        <li><AlertDialog title='Section 1'>Section 1</AlertDialog></li>
+        <li><AlertDialog title='Section 2'>Section 2</AlertDialog></li>
+        <li><AlertDialog title='Section 3'>Section 3</AlertDialog></li>
+        <li><AlertDialog title='Section 4'>Section 4</AlertDialog></li>
       </ul>  
     </div>    
   );
