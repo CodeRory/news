@@ -6,8 +6,7 @@
 
 .buttonPlusHide {  
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: row;  
 }
 
 
@@ -17,8 +16,6 @@
   flex-direction: column;
   order: -3;
   box-shadow: black;
-
-
 }
 
 
