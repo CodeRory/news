@@ -108,22 +108,19 @@
 
 /* --------------4sections------------------------- */
 
-#readMoreCss{    
-    margin-left: 1%;
+#fourSectionsReadMore{
+    /* importado */
     display: flex;
     flex-direction: row;
-    width: 40%;
-}
-
-
-
-#fourSectionsReadMore{
+    flex-wrap: nowrap;    
     border: none;    
-    margin-left: 13%;    
-    width: 120px;
-    
-
+    margin-left: 8%;           
+    width: 120px; 
+       
 }
+
+
+
 
 #fourSectionsReadMore:hover {
     border: none;    
@@ -131,3 +128,11 @@
     background-color:#c0e2fd;
 
 }
+
+@media screen and (min-width: 400px){
+    #readMoreCss {
+        margin-right: 39%;
+    
+    
+    }
+  }
