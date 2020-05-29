@@ -64,3 +64,11 @@
     width:32px;
     height:32px;
   }
+
+
+  @media screen and (max-width: 400px){
+    #showMoreSocial:hover {
+      opacity: none;
+    }
+    
+  }

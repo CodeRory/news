@@ -46,11 +46,7 @@ import {
   WeiboIcon,  */
 } from 'react-share';
 
-
-
 /* import MoreHorizIcon from '@material-ui/icons/MoreHoriz'; */
-
-
 
 import '../Share/Share.css';
 
