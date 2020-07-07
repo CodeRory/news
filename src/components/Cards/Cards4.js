@@ -19,17 +19,13 @@ const useStyles = makeStyles((theme) => ({
     height: 0,
     paddingTop: '56.25%', // 16:9    
     minHeight: '200px',
-  },
-  
+  }, 
   
   
 }));
 
 export default function RecipeReviewCard3() {
   const classes = useStyles();
-  
-
-  
 
   return (
     <div className="three">
@@ -46,9 +42,6 @@ export default function RecipeReviewCard3() {
         </Typography>
       </CardContent>      
     </Card>
-
-
-
 
     <Card className='card3C'>
       <CardMedia
@@ -78,10 +71,6 @@ export default function RecipeReviewCard3() {
         </Typography>
       </CardContent>  
       </Card>
-
-
-
-
     </div>
   );
 }

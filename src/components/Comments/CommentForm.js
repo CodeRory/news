@@ -3,8 +3,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 
-
-
 const styles = {
   root: {
     background: '#3949ab',
@@ -17,9 +15,6 @@ const styles = {
     textTransform: 'none',
     marginLeft: '17px',
     width: '88px',
-
-    
-    
   },
 };
 
@@ -40,24 +35,24 @@ class CommentForm extends React.Component {
             className={classes.root}
             id='postItButton'
             variant="contained" 
-            type="submit"            
-            /* style={{display:'none'}} */
+            type="submit"           
+            
             >Post it!
             </Button>
 
           </div>
         </form>
       );
-    } // end render
+    } 
     
     handleSubmit(event) { 
-      event.preventDefault();   // prevents page from reloading on submit
+      event.preventDefault();  
       let author = this.author;
       let body = this.body;
       this.props.addComment(author.value, body.value);
     }
     
-  } // end CommentForm component
+  } 
 
   export default withStyles(styles)(CommentForm);
   

@@ -48,11 +48,6 @@ function AlertDialog(props) {
 }
 
 
-
-
-
-
-
 export default function SearchAppBar() {  
   return (
     <div className='container'>

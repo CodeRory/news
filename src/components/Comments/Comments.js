@@ -60,7 +60,7 @@ class CommentBox extends React.Component {
           {commentNodes}
         </div>  
       );
-    } // end render
+    } 
     
     addComment(author, body) {
       const comment = {
@@ -68,7 +68,7 @@ class CommentBox extends React.Component {
         author,
         body
       };
-      this.setState({ comments: this.state.comments.concat([comment]) }); // *new array references help React stay fast, so concat works better than push here.
+      this.setState({ comments: this.state.comments.concat([comment]) }); 
     }
     
     handleClick() {
@@ -97,8 +97,7 @@ class CommentBox extends React.Component {
         return `${commentCount} comments`;
       }
     }
-  } // end CommentBox component
-  
+  } 
   
   class Comment extends React.Component {
     render () {
